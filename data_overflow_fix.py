@@ -5,6 +5,7 @@ import os
 os.chdir(r'D:\pys')  # 修改当前工作目录到D:\pys，其中r代表raw string
 
 '''
+参考：https://zhuanlan.zhihu.com/p/334450615
 项目中要求处理大量txt中的数据，数据分为五列，第二至四列中如果有大于1的数据，就将其改为1
 背景是分布于[0, 1]的坐标点
 
