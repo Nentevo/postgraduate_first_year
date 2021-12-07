@@ -9,7 +9,7 @@ using namespace std;
 /*
 项目背景：在ubuntu 16.04下利用mosquitto实现mqtt协议的本地回环，发送端每隔一分钟输出hello!到客户端
 发送端与客户端均在终端上输出时间戳
-运行于发送端，Ctrl + C终端死循环 
+运行于发送端，用Ctrl + C中断死循环 
 */
 
 int main()
