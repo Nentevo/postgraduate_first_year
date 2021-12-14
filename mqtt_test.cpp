@@ -20,16 +20,15 @@ int main()
 	while (1)
 	{
 		//get date and time according to the system
-    	time_t now = time(0);
-
-    	//change 'now' into string
+		time_t now = time(0);
+		//change 'now' into string
 		char* time_now = ctime(&now);
 
 		cout << "test No." << i << " " << time_now;
 		
+		cout.flush();
 		/*std::cout is row-buffering
 		  using 'endl' or 'cout.flush()' can make it output immediately*/
-		cout.flush();
 		
 		char pub[100];
 		sprintf(pub, "mosquitto_pub -t 'temp' -m 'hello! %s'", time_now);
